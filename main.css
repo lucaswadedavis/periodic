@@ -1,0 +1,96 @@
+body {
+	margin: 0;
+	background-color: #000;
+	color: #fff;
+	font-size: 13px;
+	line-height: 24px;
+	overscroll-behavior: none;
+}
+
+a {
+	color: #ff0;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+button {
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.info {
+	position: absolute;
+	width: 100%;
+	padding: 40px;
+	box-sizing: border-box;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  color: #000;
+	pointer-events: none;
+	z-index: 1; /* TODO Solve this in HTML */
+}
+
+a, button, input, select {
+	pointer-events: auto;
+}
+
+.dg.ac {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	z-index: 2 !important; /* TODO Solve this in HTML */
+}
+
+#overlay {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0,0,0,0.7);
+}
+
+	#overlay button {
+		background: #ffffff;
+		border: 0;
+		color: #000000;
+		padding: 16px 20px;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+#notSupported {
+	width: 50%;
+	margin: auto;
+	background-color: #f00;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+h1.symbol {
+  font-size: 7em;
+  font-weight: 400;
+}
+
+.controls {
+	z-index: 2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.controls button {
+  margin: 0 12px 40px 12px;
+}
